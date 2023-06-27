@@ -139,10 +139,8 @@ footer {
 
 .flex-container footer {
   display: flex;
-  flex-grow: 1;
-  flex-basis: auto;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
