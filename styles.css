@@ -1,6 +1,32 @@
+@media screen and (max-width: 600px) {
+  .flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 body {
   background-size: 100%;
   font-family: monospace;
+}
+
+/* header {
+  border-bottom: 2px solid black;
+} */
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(84, 80, 80);
 }
 
 .flex-container {
@@ -38,36 +64,6 @@ header {
   border-radius: 50px;
   color: #ffbc5b;
   background-color: black;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 800px;
-  font-size: 20px;
-}
-
-.menu > a {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 30px;
-  margin-top: 20px;
-  border-radius: 20px;
-  color: black;
-  font-family: monospace;
-}
-
-.menu a:hover {
-  border: 1px solid black;
-  border-radius: 50px;
-  color: #ffbc5b;
-  background-color: black;
-  text-decoration: underline;
-  font-weight: 400;
-  cursor: pointer;
 }
 
 hr {
