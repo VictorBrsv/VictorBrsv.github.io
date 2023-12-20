@@ -11,10 +11,6 @@ body {
   font-family: monospace;
 }
 
-/* header {
-  border-bottom: 2px solid black;
-} */
-
 header {
   position: relative;
 }
