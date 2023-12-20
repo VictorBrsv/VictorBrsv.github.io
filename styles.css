@@ -30,6 +30,9 @@ header::after {
 }
 
 .flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -81,6 +84,7 @@ hr {
   flex-wrap: nowrap;
   margin-top: 20px;
   padding: 10px;
+  flex-grow: 1;
 }
 
 .art_one {
@@ -107,12 +111,6 @@ hr {
   flex: 1;
 }
 
-.hobbies {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
 h2 {
   padding-left: 20px;
   text-align: left;
@@ -128,15 +126,15 @@ h2:hover {
 }
 
 footer {
-  flex-grow: 0; /*Запрещаем увеличиваться*/
-  flex-shrink: 0; /*Запрещаем сжиматься*/
+  flex-grow: 0;
+  flex-shrink: 0;
   flex-basis: auto;
 }
 
 .flex-container footer {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
